@@ -47,14 +47,14 @@ xmltv guide data:       http://ip.of.docker.machine:9797/mlbguide.xmltv
 3.  under source choose URL and insert  http://ip.of.docker.machine:9797/mlb.m3u
 4.  under options choose refresh daily, ignore channel number from m3u, choose a starting channel number (i suggest a very high starting channel out of the way), prefer channel logos from m3u, and finally no stream limit.
 5.  under xmltv guide data insert http://ip.of.docker.machine:9797/mlbguide.xmltv
-6.  choose a refresh of 3 hours or schedule you prefer 
+6.  choose a refresh of 2 hours or schedule you prefer 
 7.  click save and the source will be generated
 
 IMPORTANT!!
 
 8.  IMPORTANT!! click manage lineup under the new source and void out all the channels. this will prevent channels from trying to record from the dummy channels in the m3u. IMPORTANT!!
 
-9.  if you have already created the mlbserver source inside of channels dvr, i have found you need to temove the custom source and remake it with nothing on the url xmltv guide data box, choose a refresh period and save. if you havent made the mlbserver source in channels dvr yet, when you make the mlbserver source leave the xmltv guide data section empty. choose refresh every 3 hours. 
+9.  if you have already created the mlbserver source inside of channels dvr, i have found you need to remove the custom source and remake it with nothing inside the url xmltv guide data box, choose a refresh period of 2 hours and save. if you havent made the mlbserver source in channels dvr yet, when you make the mlbserver source leave the xmltv guide data section empty. choose refresh every 2 hours. 
 11.  now you can assign the guide data to the mlbserver source from this mlb.tvguide container
 12.  choose the manage section on the mlbserver source and then choose set provider(or change provider). next choose pick existing and then choose this projects custom source name. 
 13.  click manage on the mlb server again, select manage lineup, click the pencil on each team and select the teams that correspond with each other.
