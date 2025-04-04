@@ -4,8 +4,13 @@
 
 
 
+```
+
 docker pull ghcr.io/rice9797/mlb-scraper:latest
-docker run -d --restart unless-stopped -p 9797:9797 -e TZ=America/Chicago ghcr.io/rice9797/mlb-scraper:latest
+
+docker run -d --restart unless-stopped --name mlbtvguide -p 9797:9797 -e TZ=America/Chicago ghcr.io/rice9797/mlb-scraper:latest
+
+```
 
 
 
